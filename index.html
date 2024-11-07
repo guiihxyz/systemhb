@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System HB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
+</head>
+<body class="relative antialiased">
+    <header class="absolute top-0 left-0 z-50 w-full">
+        <nav class="flex justify-between items-center px-24 py-6">
+            <a href="/">
+                <div class="flex items-center transition-all hover:brightness-50">
+                    <img src="src/images/logo.png" alt="Logo do HabboSystem" class="h-[60px]">
+                </div>
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="#planos" class="bg-orange-800 text-orange-100 px-6 py-1.5 rounded transition-colors hover:bg-orange-900">Adquira um plano</a>
+                <a href="http://systemhb.infinityfreeapp.com" target="_blank" class="bg-lime-800 text-lime-200 px-6 py-1.5 rounded transition-colors hover:bg-lime-900">Teste a demo</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-screen bg-gradient-radial flex justify-center items-center overflow-hidden">
+            <div class="w-screen h-screen absolute bottom-0 left-0 bg-gradient-to-t from-[#FFBF61] to-transparent opacity-50 z-20"></div>
+
+            <div class="absolute top-[450px] left-10">
+                <img src="src/images/previews/2.png" alt="Perfil preview" class="w-[500px]">
+            </div>
+            <div class="absolute top-[100px] right-10">
+                <img src="src/images/previews/1.png" alt="Chat preview" class="w-[500px]">
+            </div>
+            <div class="z-30 text-center">
+                <h1 class="text-6xl quarto-font">você quer algo <span class="bg-[#FFD8BE] px-3 rounded font-bold quarto-font">novo?</span></h1>
+                <p class="text-xl mt-2">está cansado de sistemas iguais e sem novas ideias?</p>
+                
+                <div class="relative mt-10">
+                    <p class="text-3xl quarto-font">se você quer mudar isso, você está no lugar <span class="font-semibold quarto-font">certo</span></p>
+
+                    <svg class="absolute -bottom-[16px] -right-[15px] w-[200px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
+                        <path d="M5,15 Q20,5 40,10 T80,12 Q90,5 110,10 T150,10 Q160,15 190,10" fill="none" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative px-48 py-20 bg-[#FCFAEE] flex justify-between items-center gap-24 overflow-hidden">
+            <div class="absolute -top-[100px] -left-[350px] w-[900px] h-[500px] rounded-full bg-gradient-to-b from-sky-400 opacity-40 z-20"></div>
+            <div class="absolute top-[200px] -right-[20px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-rose-400 opacity-75 z-20"></div>
+
+            <div class="max-w-[700px] z-40">
+                <h1 class="text-5xl font-bold">HabboSystem, além do que você possa imaginar</h1>
+                <p class="mt-6 text-pretty text-zinc-600">Já pensou? Um System do jeitinho que você quer, com suas modificações e ideias</p>
+                <p class="mt-4 text-pretty text-zinc-600">Transforme suas ideias em realidade e leve sua gestão a um novo nível com um sistema único, desenvolvido para atender exatamente às suas necessidades</p>
+            </div>
+            <div class="z-40">
+                <img src="src/images/previews/3.png" alt="Preview Home" class="rounded-lg rotate-6">
+            </div>
+        </section>
+
+        <section class="relative px-48 py-20 flex flex-col items-center overflow-hidden">
+            <div class="absolute -bottom-[400px] left-[40px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-violet-400 blur-3xl opacity-50 z-20"></div>
+            <div class="absolute -top-[320px] right-[140px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-emerald-400 blur-3xl opacity-75 z-20"></div>
+
+            <div class="text-center mb-24 z-20">
+                <h1 class="text-3xl text-zinc-900 font-bold">Utilizamos a própria API do Habbo Hotel</h1>
+                <p class="mt-0.5 text-pretty text-zinc-600">Além de fazer uso de fontes oficiais, fazemos a migração do sistema para outros jogos também</p>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-48 z-20">
+                <div>
+                    <h2 class="text-xl text-zinc-900 font-semibold">Teste a API</h2>
+                    <p class="text-sm text-pretty text-zinc-600">(As imagens podem estar bugadas)</p>
+
+                    <div class="flex flex-col items-center gap-2 mt-1">
+                        <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=Luixeey&action=std&direction=2&head_direction=3&img_format=png&gesture=std&frame=1&headonly=0&size=l" alt="Este usuário não existe" id="user_avatar">
+                        <p class="text-xl font-semibold" id="username">Luixeey</p>
+                    </div>
+                </div>
+                <div>
+                    <label for="user" class="block text-sm font-semibold text-zinc-600 mb-2">Nome do usuário</label>
+                    <input type="text" id="user" class="w-full px-4 py-2 border rounded bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Digite o nome do usuário" value="Luixeey">
+                </div>
+            </div>
+        </section>
+
+        <section class="relative h-screen flex justify-between items-center overflow-hidden">
+            <div class="absolute -translate-x-1/2 top-24 left-1/2">
+                <h1 class="text-4xl text-[#1E201E] font-bold quarto-font">você pr<span class="text-[#FCFAEE] quarto-font">efere...</span></h1>
+            </div>
+            <div class="w-1/2 h-full flex flex-col justify-center items-center gap-4 bg-[#FCFAEE] px-48 py-20">
+                <div class="max-w-[700px] text-center z-40">
+                    <h2 class="text-4xl text-[#1E201E] font-bold quarto-font">algo mais claro?</h2>
+                </div>
+                <div class="w-[620px]">
+                    <img src="src/images/day.png" alt="Foto representando o dia" class="w-full h-full">
+                </div>
+            </div>
+
+            <div class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <p class="text-5xl text-[#1E201E] font-bold quarto-font">o<span class="text-[#FCFAEE] quarto-font">u</span></p>
+            </div>
+
+            <div class="w-1/2 h-full flex flex-col justify-center items-center gap-4 bg-[#1E201E] px-48 py-20">
+                <div class="max-w-[700px] text-center z-40">
+                    <h2 class="text-4xl text-[#FCFAEE] font-bold quarto-font">algo mais escuro?</h2>
+                </div>
+                <div class="w-[620px]">
+                    <img src="src/images/night.png" alt="Foto representando a noite" class="w-full">
+                </div>
+            </div>
+            
+            <div class="absolute -translate-x-1/2 bottom-14 left-1/2">
+                <p class="w-[951px] text-2xl text-[#1E201E] text-center font-bold quarto-font">adaptamos nosso sistema para ter uma grande <span class="text-[#FCFAEE] quarto-font">acessibilidade com todos os tipos de usuários e</span> prefer<span class="text-[#FCFAEE] quarto-font">ências</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="relative h-screen px-48 py-20 flex justify-center items-center overflow-hidden">
+            <div class="absolute top-[260px] -left-[550px] w-[900px] h-[500px] rounded-full bg-gradient-to-b from-orange-400 opacity-50 z-20 rotate-[270deg]"></div>
+            <div class="absolute top-[200px] right-[20px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-orange-400 opacity-75 z-20"></div>
+
+            <div class="flex justify-between items-center gap-48 z-20">
+                <div class="max-w-[700px] z-40">
+                    <h1 class="text-5xl font-bold">Ficou interessado para ver como funciona?</h1>
+                    <p class="mt-2 text-pretty text-zinc-600">Teste a nossa versão de demonstração para uma experiência prévia com o site</p>
+                    <div class="mt-8">
+                        <a href="http://systemhb.infinityfreeapp.com" target="_blank" class="bg-orange-800 text-orange-100 px-6 py-1.5 rounded transition-colors hover:bg-orange-900">Acesse a versão demo</a>
+                    </div>
+                </div>
+                <div class="z-40">
+                    <img src="src/images/demo.png" alt="Imagem introduzindo à demo" class="w-[1300px]">
+                </div>
+            </div>
+        </section>
+
+        <section class="relative max-h-screen px-48 py-20 flex justify-center items-center" id="planos">
+            <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+                <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
+                    <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-indigo-500 to-red-500 opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                </div>
+                <div class="mx-auto max-w-4xl text-center">
+                    <h2 class="text-base/7 font-semibold text-indigo-500">Preços</h2>
+                    <p class="mt-2 text-balance text-5xl font-semibold tracking-tight text-zinc-900 sm:text-6xl">Selecione o plano certo para você</p>
+                </div>
+                <p class="mx-auto mt-5 max-w-2xl text-pretty text-center text-lg font-medium text-zinc-600 sm:text-xl/8">Obtenha o melhor desempenho para o orçamento selecionado, as vendas são realizadas por Whatsapp, é criado um subdomínio para você, ou transferimos para o seu próprio url</p>
+
+                <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+                    <div class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-zinc-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
+                        <h3 id="tier-basico" class="text-base/7 font-semibold text-indigo-600">Básico</h3>
+                        <p class="mt-4 flex items-baseline gap-x-2">
+                            <span class="text-5xl font-semibold tracking-tight text-zinc-900">R$67</span>
+                            <span class="text-base text-zinc-500">/mês</span>
+                        </p>
+                        <p class="mt-6 text-base/7 text-zinc-600">O plano perfeito para você que está começando sua jornada</p>
+                        <ul role="list" class="mt-8 space-y-3 text-sm/6 text-zinc-600 sm:mt-10">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Funções essenciais
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Acompanhamento e suporte semanal
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Atendimento em até 24 horas
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Customização básica
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>                                
+                                Modificações solicitadas
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5533999478236?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20BÁSICO.
+                        " target="_blank" aria-describedby="tier-basico" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Ver mais</a>
+                    </div>
+
+                    <div class="relative rounded-3xl bg-zinc-900 p-8 shadow-2xl ring-1 ring-zinc-900/10 sm:p-10">
+                        <h3 id="tier-avancado" class="text-base/7 font-semibold text-red-400">Avançado</h3>
+                        <p class="mt-4 flex items-baseline gap-x-2">
+                            <span class="text-5xl font-semibold tracking-tight text-white">R$149</span>
+                            <span class="text-base text-zinc-400">/mês</span>
+                        </p>
+                        <p class="mt-6 text-base/7 text-zinc-300">Plano dedicado para você que deseja obter o máximo desempenho e possibilidades</p>
+                        <ul role="list" class="mt-8 space-y-3 text-sm/6 text-zinc-300 sm:mt-10">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Todas as funções (Mensagens, Blogs, Quizes, Votações)
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Acompanhamento e suporte diário 
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Customização totalmente dedica
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Modificações solicitadas
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Atualizações semanais
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                API integrada
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                </svg>
+                                Backup semanal
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5533999478236?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20AVANÇADO" target="_blank" aria-describedby="tier-avancado" class="mt-8 block rounded-md bg-red-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500 sm:mt-10">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative px-48 py-20 flex flex-col items-center overflow-hidden">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-24 z-20">
+                    <h1 class="text-3xl text-zinc-900 font-bold">Perguntas frequentes</h1>
+                    <p class="mt-1 text-pretty text-zinc-600">Essas são as respostas das perguntas mais feitas pelos clientes, caso sua dúvida não esteja aqui, <a href="https://wa.me/5533999478236?text=Olá!%20Gostaria%20eu%20possuo%20uma%20dúvida!" target="_blank" class="text-indigo-700 hover:underline">contate-nos</a></p>
+                </div>
+
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px- -mt-10">
+                    <div class="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full"
+                    >
+                      <div class="w-full lg:w-1/2">
+                        <img
+                          src="src/images/faq.png"
+                          alt="FAQ tailwind section"
+                          class="w-full rounded-xl object-cover"
+                        />
+                      </div>
+                      <div class="w-full lg:w-1/2">
+                        <div class="lg:max-w-xl">
+                            <div class="accordion-group" data-accordion="default-accordion">
+                                <div class="accordion pb-8 border-b border-solid border-gray-200" id="basic-heading-one-with-arrow-always-open">
+                                    <button class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium always-open" aria-controls="basic-collapse-one-with-arrow-always-open">
+                                        <h5>Como faço para criar uma conta no sistema?</h5>
+                                        <svg class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="basic-collapse-one-with-arrow-always-open" class="accordion-content w-full px-0 overflow-hidden pr-4 active" style="max-height: 100px;" aria-labelledby="basic-heading-one-with-arrow-always-open">
+                                        <p class="text-base font-normal text-gray-600">
+                                            Para criar uma conta, entre na página inicial e clique em "Registrar". Insira suas informações, como nome de usuário e senha, e complete o cadastro. Após o registro, você poderá acessar todas as funcionalidades do sistema.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion py-8 border-b border-solid border-gray-200" id="basic-heading-two-with-arrow-always-open">
+                                    <button class="accordion-toggle group inline-flex items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium" aria-controls="basic-collapse-two-with-arrow-always-open">
+                                        <h5>É seguro confiar meus dados ao sistema?</h5>
+                                        <svg class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="basic-collapse-two-with-arrow-always-open" class="accordion-content w-full px-0 overflow-hidden pr-4" aria-labelledby="basic-heading-two-with-arrow-always-open">
+                                        <p class="text-base text-gray-500 font-normal">
+                                            Sim, o sistema conta com diversas medidas de segurança para proteger seus dados e sua conta, incluindo criptografia de dados e backups regulares. Nosso objetivo é garantir um ambiente seguro e confiável.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion py-8 border-b border-solid border-gray-200" id="basic-heading-three-with-arrow-always-open">
+                                    <button class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600" aria-controls="basic-collapse-three-with-arrow-always-open">
+                                        <h5>Como posso redefinir minha senha?</h5>
+                                        <svg class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="basic-collapse-three-with-arrow-always-open" class="accordion-content w-full px-0 overflow-hidden pr-4" aria-labelledby="basic-heading-three-with-arrow-always-open">
+                                        <p class="text-base text-gray-500 font-normal">
+                                            Para redefinir sua senha, clique em "Esqueci minha senha" na página de login e siga as instruções. Um e-mail será enviado para você redefinir a senha com segurança.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion py-8" id="basic-heading-four-with-arrow-always-open">
+                                    <button class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600" aria-controls="basic-collapse-four-with-arrow-always-open">
+                                        <h5>Como é realizado o pagamento?</h5>
+                                        <svg class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="basic-collapse-four-with-arrow-always-open" class="accordion-content w-full px-0 overflow-hidden pr-4" aria-labelledby="basic-heading-four-with-arrow-always-open">
+                                        <p class="text-base text-gray-500 font-normal">
+                                            O pagamento pode ser feito através de transferência bancária ou via WhatsApp, onde nossa equipe irá orientar sobre os métodos aceitos e esclarecer qualquer dúvida sobre o processo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="px-48 py-10 flex justify-between overflow-hidden">
+        <div class="flex flex-col">
+            <a href="/">
+                <div class="inline-flex items-center transition-all hover:brightness-50">
+                    <img src="src/images/logo.png" alt="Logo do HabboSystem" class="w-[48px]">
+                </div>
+            </a>
+            <p class="text-pretty text-zinc-600 mt-10">&copy; HabboSystem 2024</p>
+        </div>
+
+        <div class="flex flex-col items-end">
+            <a href="https://github.com/guiihxyz" target="_blank">
+                <div class="inline-flex items-center transition-all hover:brightness-50">
+                    <img src="src/images/github.png" alt="Logo do GitHub" class="w-[48px]">
+                </div>
+            </a>
+            <p class="text-pretty text-zinc-600 mt-10">Site feito por: <a href="https://github.com/guiihxyz" target="_blank" class="text-indigo-700 hover:underline">guiihxyz</a></p>
+        </div>
+    </footer>
+
+    <div class="absolute bottom-[200px] -left-[220px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-indigo-400 blur-3xl opacity-40 z-20"></div>
+
+    <div class="absolute bottom-[10px] right-[50px] w-[500px] h-[500px] rounded-full bg-gradient-to-b from-indigo-400 blur-3xl opacity-25 z-20"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

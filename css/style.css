@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #d4d4d8 transparent;
+}
+
+.quarto-font {
+    font-family: Quarto, sans-serif;
+}
+
+.bg-gradient-radial {
+    background: radial-gradient(circle, rgba(255, 223, 186, 1) 0%, rgba(253, 230, 138, 1) 100%);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.accordion.active .accordion-content {
+    max-height: 1000px;
+}

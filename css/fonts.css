@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Bold-Regular.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quarto';
+    src: url('../src/fonts/Quarto-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
